@@ -1,0 +1,81 @@
+/* @theme lecture */
+
+/*
+  Marp Theme for Lecture Slides
+  Created by Kazutoshi Ohta
+*/
+
+@import "default";
+
+section h1 {
+  color: black;
+  border-bottom: 1px solid orangered;
+}
+
+section h2 {
+  font-size: 28pt;
+  color: darkblue;
+  border-bottom: 1px solid;
+}
+
+section strong {
+  color: darkgreen;
+}
+
+section figcaption{
+  font-size: 80%;
+  padding-top: 16px;  
+}
+
+section blockquote {
+  color: darkslategray;
+}
+
+/* Pagination */
+section::after {
+  content: attr(data-marpit-pagination) ' / ' attr(data-marpit-pagination-total);
+}
+
+/* Title Page Class */
+
+section.titlepage {
+  background-color: #f0f0f0;
+  color: black;
+}
+
+section.titlepage h2 {
+  color: darkolivegreen;
+  font-size: 1.2em;
+  border-bottom: 0px;
+}
+
+section.titlepage footer,
+section.titlepage header,
+section.titlepage:after {
+    /* hide footer, header and pagination */
+  display: none;
+}
+
+/* Class for Figures */
+section.figs table {
+  margin: auto;
+  font-size: 0.8em;
+}
+
+section.figs tr, th, td {
+  background-color: var(--background-color);
+  border: none !important;
+}
+
+/* the "center" keyword centers the image - may break, careful */
+/* https://github.com/marp-team/marpit/issues/141#issuecomment-473204518 */
+img[alt~="center"] {
+  display: block;
+  margin: auto;
+}
+
+/* right aligned image */
+img[alt~="right"] {
+  float: right;
+}
+
