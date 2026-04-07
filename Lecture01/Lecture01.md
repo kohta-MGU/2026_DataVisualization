@@ -1,3 +1,8 @@
+---
+marp: true
+theme: lecture
+---
+
 MSBBE211 データ可視化演習
 =====================
 
@@ -68,11 +73,13 @@ JupyterLab学習システムについて
 
 - 以下のURLからJupyterLabの学習システムにログインします (システムは11号館1階のサーバー室内にあります)
 
-https://jupyter.meijigakuin.ac.jp
+    https://jupyter-gpu.meijigakuin.ac.jp
 
 - 左にあるGitのボタンから`Clone a Repository`を選択し、以下のURLを入力して`Clone`ボタンを押します
 
 https://github.com/kohta-MGU/2026_DataVisualization.git
+
+![bg right:30% width:350](figs/git_clone.png)
 
 ---
 
